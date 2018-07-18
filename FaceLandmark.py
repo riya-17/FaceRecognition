@@ -69,17 +69,30 @@ for (i, rect) in enumerate(rects):
 	# convert dlib's rectangle to a OpenCV-style bounding box
 	# [i.e., (x, y, w, h)], then draw the face bounding box
 	(x, y, w, h) = face_utils.rect_to_bb(rect)
+	faceOrig = imutils.resize(image[y:y + h, x:x + w], width=256)
+	faceAligned = face.align(image, gray, rect)
 	cv2.rectangle(image, (x, y), (x + w, y + h), (0, 255, 0), 2)
+
+	import uuid
+	f = str(uuid.uuid4())
+	cv2.imwrite("foo/" + f + ".png", faceAligned)
 
 	# show the face number
 	cv2.putText(image, "Face #{}".format(i + 1), (x - 10, y - 10),
 		cv2.FONT_HERSHEY_SIMPLEX, 0.5, (0, 255, 0), 2)
+
+	
 
 	# loop over the (x, y)-coordinates for the facial landmarks
 	# and draw them on the image
 	for (x, y) in shape:
 		cv2.circle(image, (x, y), 1, (0, 0, 255), -1)
 
+	cv2.imshow("Original", faceOrig)
+	cv2.imshow("Aligned", faceAligned)
+	cv2.waitKey(0)
+
+
 # show the output image with the face detections + facial landmarks
-cv2.imshow("Output", image)
+cv2.imshow("Facial Landmarks", image)
 cv2.waitKey(0)
