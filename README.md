@@ -3,7 +3,7 @@ Face Recognizer is about Recognizing Faces of an Individual with the help of the
 Facial Recognizer uses deep learning algorithms to compare a live capture or digital image with the stored faceprints(also known as datasets) to verify an identity.<br><br>
 The Algorithm used for classification is [k-NN model i.e. k-Nearest Neighbor classifier](https://www.pyimagesearch.com/2016/08/08/k-nn-classifier-for-image-classification/). It uses Euclidean distance to compare images for similarity. <br><br>  
 
-You need to install the following Libraries:
+**Setup**
 * pip install keras
 * pip install numpy
 * pip install cmake
@@ -15,6 +15,15 @@ You need to install the following Libraries:
 Set the path of the input images in the code and run the following command:
 * **python FaceRecognizer.py**<br><br>
 
+**How it Works?**
+* Image from which Face needs to be Recognized is to be loaded.
+* The face is detected and cropped.
+* if the face is not Aligned Straight than it is aligned.
+* Landmarks are detected i.e. 68 (x, y)-coordinates that map to facial structures on the face.
+* The Detected Face is encoded i.e. 128-d embeddings of the image are created.
+* The input image[encoding] is passed to k-NN model for classification.
+* k-NN model return the name with the highest votes 
+<br><br>
 You will get the following outputs:<br><br>
 
 * Input Image - Image in which Faces are to be recognized:
