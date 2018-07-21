@@ -1,7 +1,6 @@
 # Face Recognizer
 Face Recognizer is about Recognizing Faces of an Individual with the help of their facial features. <br><br>
-Facial Recognizer uses deep learning algorithms to compare a live capture or digital image with the stored faceprints(also known as datasets) to verify an identity.
-
+Facial Recognizer uses deep learning algorithms to compare a live capture or digital image with the stored faceprints(also known as datasets) to verify an identity.<br><br>
 
 
 You need to install the following Libraries:
@@ -64,4 +63,5 @@ Aligned Image:
 <br><br>
 
 
-I got a big help from [pyimagesearch](https://www.pyimagesearch.com/pyimagesearch-gurus/). It cleared most of my concepts with very Ease and practical examples.
+I got a big help from [pyimagesearch](https://www.pyimagesearch.com/pyimagesearch-gurus/). It cleared most of my concepts with very Ease and practical examples.<br><br>
+[Adam Geitgey](https://medium.com/@ageitgey/machine-learning-is-fun-part-4-modern-face-recognition-with-deep-learning-c3cffc121d78)
