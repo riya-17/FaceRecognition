@@ -16,7 +16,7 @@ Set the path of the input images in the code and run the following command:
 ```
 python FaceRecognizer.py
 ```
-<br><br>
+
 # How it Works?
 * Image from which Face needs to be Recognized is loaded i.e. Input Image.
 * The face is detected and cropped.
@@ -70,7 +70,7 @@ Aligned Image:
 
 ![Detected Face](https://user-images.githubusercontent.com/25060937/43034749-dba060ca-8cff-11e8-8f90-2dc4765f586c.PNG)<br><br>
 
-<br><br>
+<br>
 ```
 encode-faces.py
 ```
