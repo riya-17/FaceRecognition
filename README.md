@@ -18,7 +18,7 @@ python FaceRecognizer.py
 # How it Works?
 * Image from which Face needs to be Recognized is loaded i.e. Input Image.
 * The face is detected and cropped.
-* if the face is not Aligned Straight than it is aligned.
+* if the face is not Aligned Straight then it is aligned.
 * Landmarks are detected i.e. 68 (x, y)-coordinates that map to facial structures on the face.
 * The Detected Face is encoded i.e. 128-d embeddings of the image are created.
 * The input image[encoding] is passed to k-NN model for classification.
