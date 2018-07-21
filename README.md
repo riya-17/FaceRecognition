@@ -1,7 +1,7 @@
 # Face Recognizer
 Face Recognizer is about Recognizing Faces of an Individual with the help of their facial features. <br><br>
 Facial Recognizer uses deep learning algorithms to compare a live capture or digital image with the stored faceprints(also known as datasets) to verify an identity.<br><br>
-The Algorithm used for classification is [k-NN model i.e. k-Nearest Neighbor classifier](https://www.pyimagesearch.com/2016/08/08/k-nn-classifier-for-image-classification/).It uses Euclidean distance to compare images for similarity. <br><br>  
+The Algorithm used for classification is [k-NN model i.e. k-Nearest Neighbor classifier](https://www.pyimagesearch.com/2016/08/08/k-nn-classifier-for-image-classification/). It uses Euclidean distance to compare images for similarity. <br><br>  
 
 You need to install the following Libraries:
 * pip install keras
@@ -13,7 +13,7 @@ You need to install the following Libraries:
 * pip install face_recognition<br><br>
 
 Set the path of the input images in the code and run the following command:
-* python FaceRecognizer.py<br><br>
+* **python FaceRecognizer.py**<br><br>
 
 You will get the following outputs:<br><br>
 
@@ -36,8 +36,8 @@ You will get the following outputs:<br><br>
 * Detected Face - The Face is recognized and the name of the recognized face is displayed along with the face. If the face does not belong to the Dataset than the Face is tagged as Unknown.
 
 ![Detected face](https://user-images.githubusercontent.com/25060937/43034739-b58304f6-8cff-11e8-8e93-68cae1883b30.PNG)<br><br>
-<br><br><br><br>
-Another Recognition:
+<br><br><br>
+**Another Recognition:**
 <br><br>
 * Input Image:
 
@@ -59,14 +59,18 @@ Aligned Image:
 
 ![Detected Face](https://user-images.githubusercontent.com/25060937/43034749-dba060ca-8cff-11e8-8f90-2dc4765f586c.PNG)<br><br>
 
-
 <br><br>
 
 **encode-faces.py :**
 
-It is used to create 128-d face embeddings of the imput image as well as custom dataset. These embeddings are used to compare input image(embeddings) with the dataset(embeddings), the one with the highest votes is preferred.
+It is used to create 128-d face embeddings of the imput image as well as custom dataset. These embeddings are used to compare input image(embeddings) with the dataset(embeddings), the one with the highest votes is preferred.<br><br>
 
+**Resources**
 
+* I got big help from [pyimagesearch](https://www.pyimagesearch.com/pyimagesearch-gurus/). It cleared most of my concepts with very Ease and practical examples.<br><br>
+* [Adam Geitgey](https://medium.com/@ageitgey/machine-learning-is-fun-part-4-modern-face-recognition-with-deep-learning-c3cffc121d78) : How Face Recognition works
+* [Face Recognition](https://www.pyimagesearch.com/2018/06/18/face-recognition-with-opencv-python-and-deep-learning/)
+* [Custom Dataset](https://www.pyimagesearch.com/2018/06/11/how-to-build-a-custom-face-recognition-dataset/): helped me to create my own dataset.
+* [Must Read Post](http://blog.dlib.net/2017/02/high-quality-face-recognition-with-deep.html)
+* [Deep Face Recognition](http://krasserm.github.io/2018/02/07/deep-face-recognition/)
 
-I got a big help from [pyimagesearch](https://www.pyimagesearch.com/pyimagesearch-gurus/). It cleared most of my concepts with very Ease and practical examples.<br><br>
-[Adam Geitgey](https://medium.com/@ageitgey/machine-learning-is-fun-part-4-modern-face-recognition-with-deep-learning-c3cffc121d78)
