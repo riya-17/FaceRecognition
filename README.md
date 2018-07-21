@@ -26,7 +26,7 @@ Original Image - Image consists of cropped original Image
 
 Aligned Image - Aligning the image increases the efficiency if the Algorithm
 
-[Aligned image](https://user-images.githubusercontent.com/25060937/43034725-940c2d52-8cff-11e8-9c83-803d93966a1e.PNG)     ![Aligned Image](https://user-images.githubusercontent.com/25060937/43034732-a36fade6-8cff-11e8-885e-6a2a84fe8ebc.PNG)
+![Aligned image](https://user-images.githubusercontent.com/25060937/43034725-940c2d52-8cff-11e8-9c83-803d93966a1e.PNG)     ![Aligned Image](https://user-images.githubusercontent.com/25060937/43034732-a36fade6-8cff-11e8-885e-6a2a84fe8ebc.PNG)
 
 
 Landmarks - Shows the Landmarks of theDetected Faces
