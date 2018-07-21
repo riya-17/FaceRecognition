@@ -13,9 +13,7 @@ The Algorithm used for classification is [k-NN model i.e. k-Nearest Neighbor cla
 * pip install face_recognition<br><br>
 
 Set the path of the input images in the code and run the following command:
-```
 python FaceRecognizer.py
-```
 
 # How it Works?
 * Image from which Face needs to be Recognized is loaded i.e. Input Image.
@@ -69,10 +67,9 @@ Aligned Image:
 * Detected Face :
 
 ![Detected Face](https://user-images.githubusercontent.com/25060937/43034749-dba060ca-8cff-11e8-8f90-2dc4765f586c.PNG)<br><br>
+<br>
 
-```
-encode-faces.py
-```
+**encode-faces.py**
 
 It is used to create 128-d face embeddings of the input image as well as custom dataset. These embeddings are used to compare input image(embeddings) with the dataset(embeddings), the one with the highest votes is preferred.<br><br>
 
