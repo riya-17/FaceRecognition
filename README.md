@@ -16,7 +16,7 @@ Set the path of the input images in the code and run the following command:
 ```
 python FaceRecognizer.py
 ```
-
+<br>
 # How it Works?
 * Image from which Face needs to be Recognized is loaded i.e. Input Image.
 * The face is detected and cropped.
@@ -74,6 +74,7 @@ Aligned Image:
 ```
 encode-faces.py
 ```
+
 It is used to create 128-d face embeddings of the input image as well as custom dataset. These embeddings are used to compare input image(embeddings) with the dataset(embeddings), the one with the highest votes is preferred.<br><br>
 
 **DAT file**
