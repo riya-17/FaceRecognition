@@ -23,8 +23,8 @@ Set the path of the input images in the code and run the following command:
 * The Detected Face is encoded i.e. 128-d embeddings of the image are created.
 * The input image[encoding] is passed to k-NN model for classification.
 * k-NN model return the name with the highest votes 
-<br><br><br>
-**You will get the following outputs:**<br><br>
+<br><br>
+# Outputs:<br><br>
 
 * Input Image - Image in which Faces are to be recognized:
 
