@@ -1,6 +1,8 @@
-# FaceRecognition
-Recognizes faces
-This Repository is about Recognizing Faces from an inbuilt dataset or the dataset that you have created. 
+# Face Recognizer
+Face Recognizer is about Recognizing Faces of an Individual with the help of their facial features. 
+It uses deep learning algorithms to compare a live capture or digital image with the stored faceprints(also known as datasets) to verify an identity.
+
+
 
 You need to install the following Libraries:
 * pip install keras
