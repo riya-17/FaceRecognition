@@ -13,7 +13,9 @@ The Algorithm used for classification is [k-NN model i.e. k-Nearest Neighbor cla
 * pip install face_recognition<br><br>
 
 Set the path of the input images in the code and run the following command:
+```
 python FaceRecognizer.py
+```
 
 # How it Works?
 * Image from which Face needs to be Recognized is loaded i.e. Input Image.
