@@ -15,4 +15,4 @@ To Run this Code you need to install the following Libraries.
 
 
 
-I got a big help from ""pyimagesearch""[https://www.pyimagesearch.com/pyimagesearch-gurus/]. It cleared most of my concepts with very Ease and practical examples.
+I got a big help from [pyimagesearch](https://www.pyimagesearch.com/pyimagesearch-gurus/). It cleared most of my concepts with very Ease and practical examples.
