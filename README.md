@@ -12,7 +12,7 @@ You need to install the following Libraries:
 * pip install face_recognition
 
 Set the path of the input images in the code and run the following command:
-* python FaceRecognizer.py &nbsp; 
+* python FaceRecognizer.py          &nbsp; 
 
 You will get the following outputs:
 
