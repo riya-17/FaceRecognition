@@ -71,11 +71,11 @@ python FaceRecognizer.py
 ![Detected Face](https://user-images.githubusercontent.com/25060937/43034749-dba060ca-8cff-11e8-8f90-2dc4765f586c.PNG)<br><br>
 <br>
 
-## encode-faces.py
+### encode-faces.py
 
 It is used to create 128-d face embeddings of the input image as well as custom dataset. These embeddings are used to compare input image(embeddings) with the dataset(embeddings), the one with the highest votes is preferred.<br><br>
 
-## DAT file
+### DAT file
 
 [Link to Download Dat File](https://osdn.net/projects/sfnet_dclib/downloads/dlib/v18.10/shape_predictor_68_face_landmarks.dat.bz2/)<br><br>
 
