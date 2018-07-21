@@ -1,6 +1,6 @@
 # Face Recognizer
-Face Recognizer is about Recognizing Faces of an Individual with the help of their facial features. 
-It uses deep learning algorithms to compare a live capture or digital image with the stored faceprints(also known as datasets) to verify an identity.
+Face Recognizer is about Recognizing Faces of an Individual with the help of their facial features. <br><br>
+Facial Recognizer uses deep learning algorithms to compare a live capture or digital image with the stored faceprints(also known as datasets) to verify an identity.
 
 
 
