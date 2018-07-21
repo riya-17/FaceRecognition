@@ -42,9 +42,13 @@ Another Recognition:
 
 ![Input Image](https://user-images.githubusercontent.com/25060937/43034745-d6b98ece-8cff-11e8-99a5-ee06cc01447c.PNG)
 
-* Original Image:                             Aligned Image:
+* Original Image:                             
 
-![9](https://user-images.githubusercontent.com/25060937/43034746-d7ec80ee-8cff-11e8-99f3-d2fbc9b0d408.PNG)          ![10](https://user-images.githubusercontent.com/25060937/43034747-d9125926-8cff-11e8-81df-5661d1a4ead1.PNG)
+![9](https://user-images.githubusercontent.com/25060937/43034746-d7ec80ee-8cff-11e8-99f3-d2fbc9b0d408.PNG)          
+
+Aligned Image:
+
+![10](https://user-images.githubusercontent.com/25060937/43034747-d9125926-8cff-11e8-81df-5661d1a4ead1.PNG)
 
 * Landmarks :
 
