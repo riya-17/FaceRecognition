@@ -9,12 +9,12 @@ You need to install the following Libraries:
 * pip install dlib
 * pip install opencv
 * pip install imutils
-* pip install face_recognition
+* pip install face_recognition<br><br>
 
 Set the path of the input images in the code and run the following command:
 * python FaceRecognizer.py<br><br>
 
-You will get the following outputs:
+You will get the following outputs:<br><br>
 
 * Input Image - Image in which Faces are to be recognized:
 
@@ -35,31 +35,31 @@ You will get the following outputs:
 * Detected Face - The Face is recognized and the name of the recognized face is displayed along with the face. If the face does not belong to the Dataset than the Face is tagged as Unknown.
 
 ![7](https://user-images.githubusercontent.com/25060937/43034739-b58304f6-8cff-11e8-8e93-68cae1883b30.PNG)
-
+<br><br>
 Another Recognition:
-
+<br><br>
 * Input Image:
 
 ![Input Image](https://user-images.githubusercontent.com/25060937/43034745-d6b98ece-8cff-11e8-99a5-ee06cc01447c.PNG)
 
 * Original Image:                             
 
-![9](https://user-images.githubusercontent.com/25060937/43034746-d7ec80ee-8cff-11e8-99f3-d2fbc9b0d408.PNG)          
+![Original Image](https://user-images.githubusercontent.com/25060937/43034746-d7ec80ee-8cff-11e8-99f3-d2fbc9b0d408.PNG)          
 
 Aligned Image:
 
-![10](https://user-images.githubusercontent.com/25060937/43034747-d9125926-8cff-11e8-81df-5661d1a4ead1.PNG)
+![Aligned Image](https://user-images.githubusercontent.com/25060937/43034747-d9125926-8cff-11e8-81df-5661d1a4ead1.PNG)
 
 * Landmarks :
 
-![11](https://user-images.githubusercontent.com/25060937/43034748-da4a4100-8cff-11e8-8b59-76cc7803e080.PNG)
+![Landmarks](https://user-images.githubusercontent.com/25060937/43034748-da4a4100-8cff-11e8-8b59-76cc7803e080.PNG)
 
 * Detected Face :
 
-![12](https://user-images.githubusercontent.com/25060937/43034749-dba060ca-8cff-11e8-8f90-2dc4765f586c.PNG)
+![Detected Face](https://user-images.githubusercontent.com/25060937/43034749-dba060ca-8cff-11e8-8f90-2dc4765f586c.PNG)
 
 
-
+<br><br>
 
 
 I got a big help from [pyimagesearch](https://www.pyimagesearch.com/pyimagesearch-gurus/). It cleared most of my concepts with very Ease and practical examples.
