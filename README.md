@@ -58,7 +58,7 @@ python FaceRecognizer.py
 
 ![Original Image](https://user-images.githubusercontent.com/25060937/43034746-d7ec80ee-8cff-11e8-99f3-d2fbc9b0d408.PNG)<br><br>          
 
-Aligned Image:
+* Aligned Image:
 
 ![Aligned Image](https://user-images.githubusercontent.com/25060937/43034747-d9125926-8cff-11e8-81df-5661d1a4ead1.PNG)<br><br>
 
