@@ -24,7 +24,7 @@ Set the path of the input images in the code and run the following command:
 * The input image[encoding] is passed to k-NN model for classification.
 * k-NN model return the name with the highest votes 
 <br><br>
-# Outputs:<br><br>
+# Outputs:
 
 * Input Image - Image in which Faces are to be recognized:
 
