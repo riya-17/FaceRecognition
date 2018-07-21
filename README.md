@@ -63,7 +63,7 @@ Aligned Image:
 
 **encode-faces.py :**
 
-It is used to create 128-d face embeddings of the imput image as well as custom dataset. These embeddings are used to compare input image(embeddings) with the dataset(embeddings), the one with the highest votes is preferred.<br><br>
+It is used to create 128-d face embeddings of the input image as well as custom dataset. These embeddings are used to compare input image(embeddings) with the dataset(embeddings), the one with the highest votes is preferred.<br><br>
 
 **DAT file**
 
@@ -77,4 +77,6 @@ It is used to create 128-d face embeddings of the imput image as well as custom 
 * [Custom Dataset](https://www.pyimagesearch.com/2018/06/11/how-to-build-a-custom-face-recognition-dataset/): helped me to create my own dataset.
 * [Must Read Post](http://blog.dlib.net/2017/02/high-quality-face-recognition-with-deep.html)
 * [Deep Face Recognition](http://krasserm.github.io/2018/02/07/deep-face-recognition/)
-
+* [Facial Landmarks](https://www.pyimagesearch.com/2017/04/03/facial-landmarks-dlib-opencv-python/)
+* [Facial Alignment](https://www.pyimagesearch.com/2017/05/22/face-alignment-with-opencv-and-python/)
+* [Face Recognition for Beginners](https://towardsdatascience.com/face-recognition-for-beginners-a7a9bd5eb5c2)
