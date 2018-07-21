@@ -16,10 +16,11 @@ Set the path of the input images in the code and run the following command:
 ```
 python FaceRecognizer.py
 ```
+
 # How it Works?
 * Image from which Face needs to be Recognized is loaded i.e. Input Image.
 * The face is detected and cropped.
-* if the face is not Aligned Straight than it is aligned.
+* if the face is not Aligned Straight then it is aligned.
 * Landmarks are detected i.e. 68 (x, y)-coordinates that map to facial structures on the face.
 * The Detected Face is encoded i.e. 128-d embeddings of the image are created.
 * The input image[encoding] is passed to k-NN model for classification.
@@ -68,10 +69,9 @@ Aligned Image:
 * Detected Face :
 
 ![Detected Face](https://user-images.githubusercontent.com/25060937/43034749-dba060ca-8cff-11e8-8f90-2dc4765f586c.PNG)<br><br>
+<br>
 
-<br><br>
-
-**encode-faces.py :**
+**encode-faces.py**
 
 It is used to create 128-d face embeddings of the input image as well as custom dataset. These embeddings are used to compare input image(embeddings) with the dataset(embeddings), the one with the highest votes is preferred.<br><br>
 
