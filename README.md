@@ -18,45 +18,45 @@ You will get the following outputs:<br><br>
 
 * Input Image - Image in which Faces are to be recognized:
 
-![Input Image](https://user-images.githubusercontent.com/25060937/43034709-54d27858-8cff-11e8-8247-2a92cc6e4119.PNG)
+![Input Image](https://user-images.githubusercontent.com/25060937/43034709-54d27858-8cff-11e8-8247-2a92cc6e4119.PNG)<br><br>
 
 * Original Image - Image consists of cropped original Image
 
-![Original Image](https://user-images.githubusercontent.com/25060937/43034712-6430b9cc-8cff-11e8-87f6-3a8926a46570.PNG)     ![Original Image](https://user-images.githubusercontent.com/25060937/43034730-a0e970fc-8cff-11e8-8cf4-0c137d9cc445.PNG)!
+![Original Image](https://user-images.githubusercontent.com/25060937/43034712-6430b9cc-8cff-11e8-87f6-3a8926a46570.PNG)     ![Original Image](https://user-images.githubusercontent.com/25060937/43034730-a0e970fc-8cff-11e8-8cf4-0c137d9cc445.PNG)!<br><br>
 
 * Aligned Image - Aligning the image increases the efficiency if the Algorithm
 
-![Aligned image](https://user-images.githubusercontent.com/25060937/43034725-940c2d52-8cff-11e8-9c83-803d93966a1e.PNG)     ![Aligned Image](https://user-images.githubusercontent.com/25060937/43034732-a36fade6-8cff-11e8-885e-6a2a84fe8ebc.PNG)
+![Aligned image](https://user-images.githubusercontent.com/25060937/43034725-940c2d52-8cff-11e8-9c83-803d93966a1e.PNG)     ![Aligned Image](https://user-images.githubusercontent.com/25060937/43034732-a36fade6-8cff-11e8-885e-6a2a84fe8ebc.PNG)<br><br>
 
 * Landmarks - Shows the Landmarks of theDetected Faces
 
-![Landmark](https://user-images.githubusercontent.com/25060937/43034737-b3bf7866-8cff-11e8-9f0c-7be8f4071ddb.PNG)
+![Landmark](https://user-images.githubusercontent.com/25060937/43034737-b3bf7866-8cff-11e8-9f0c-7be8f4071ddb.PNG)<br><br>
 
 * Detected Face - The Face is recognized and the name of the recognized face is displayed along with the face. If the face does not belong to the Dataset than the Face is tagged as Unknown.
 
-![7](https://user-images.githubusercontent.com/25060937/43034739-b58304f6-8cff-11e8-8e93-68cae1883b30.PNG)
-<br><br>
+![Detected face](https://user-images.githubusercontent.com/25060937/43034739-b58304f6-8cff-11e8-8e93-68cae1883b30.PNG)<br><br>
+<br><br><br><br>
 Another Recognition:
 <br><br>
 * Input Image:
 
-![Input Image](https://user-images.githubusercontent.com/25060937/43034745-d6b98ece-8cff-11e8-99a5-ee06cc01447c.PNG)
+![Input Image](https://user-images.githubusercontent.com/25060937/43034745-d6b98ece-8cff-11e8-99a5-ee06cc01447c.PNG)<br><br>
 
 * Original Image:                             
 
-![Original Image](https://user-images.githubusercontent.com/25060937/43034746-d7ec80ee-8cff-11e8-99f3-d2fbc9b0d408.PNG)          
+![Original Image](https://user-images.githubusercontent.com/25060937/43034746-d7ec80ee-8cff-11e8-99f3-d2fbc9b0d408.PNG)<br><br>          
 
 Aligned Image:
 
-![Aligned Image](https://user-images.githubusercontent.com/25060937/43034747-d9125926-8cff-11e8-81df-5661d1a4ead1.PNG)
+![Aligned Image](https://user-images.githubusercontent.com/25060937/43034747-d9125926-8cff-11e8-81df-5661d1a4ead1.PNG)<br><br>
 
 * Landmarks :
 
-![Landmarks](https://user-images.githubusercontent.com/25060937/43034748-da4a4100-8cff-11e8-8b59-76cc7803e080.PNG)
+![Landmarks](https://user-images.githubusercontent.com/25060937/43034748-da4a4100-8cff-11e8-8b59-76cc7803e080.PNG)<br><br>
 
 * Detected Face :
 
-![Detected Face](https://user-images.githubusercontent.com/25060937/43034749-dba060ca-8cff-11e8-8f90-2dc4765f586c.PNG)
+![Detected Face](https://user-images.githubusercontent.com/25060937/43034749-dba060ca-8cff-11e8-8f90-2dc4765f586c.PNG)<br><br>
 
 
 <br><br>
