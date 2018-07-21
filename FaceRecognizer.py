@@ -54,9 +54,9 @@ python recognize_faces_image.py --encodings encodings.pickle --image examples/ex
 # if you want to use predefined path than define the path in a variable
 
 args = {
-	"shape_predictor": "C:/Users/VIPIN SHARMA/Downloads/facerec/face-recognition/shape_predictor_68_face_landmarks.dat",
-	"image": "C:/Users/VIPIN SHARMA/Downloads/facerec/face-recognition/examples/9.jpg",
-        "encodings": "C:/Users/VIPIN SHARMA/Downloads/facerec/face-recognition/encodings.pickle",
+	"shape_predictor": "complete_path/shape_predictor_68_face_landmarks.dat",
+	"image": "complete_path/input_image.jpg",
+        "encodings": "complete_path/encodings.pickle",
         "detection_method": "cnn"
         
 }
@@ -161,9 +161,3 @@ for ((top, right, bottom, left), name) in zip(boxes, names):
 # Output Image
 cv2.imshow("Detected face", image)
 cv2.waitKey(0)
-
-
-
-
-
-
