@@ -16,7 +16,7 @@ Set the path of the input images in the code and run the following command:
 * **python FaceRecognizer.py**<br><br>
 
 # How it Works?
-* Image from which Face needs to be Recognized is to be loaded.
+* Image from which Face needs to be Recognized is loaded i.e. Input Image.
 * The face is detected and cropped.
 * if the face is not Aligned Straight than it is aligned.
 * Landmarks are detected i.e. 68 (x, y)-coordinates that map to facial structures on the face.
