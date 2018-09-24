@@ -4,7 +4,9 @@ Facial Recognizer uses deep learning algorithms to compare a live capture or dig
 The Algorithm used for classification is [k-NN model i.e. k-Nearest Neighbor classifier](https://www.pyimagesearch.com/2016/08/08/k-nn-classifier-for-image-classification/). It uses Euclidean distance to compare images for similarity. <br><br>  
 
 # Setup
-* pip install -r requirements.txt<br><br>
+```
+pip install -r requirements.txt<br><br>
+```
 
 Set the path of the input images in the code and run the following command:
 ```
