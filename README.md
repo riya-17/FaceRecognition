@@ -5,7 +5,7 @@ The Algorithm used for classification is [k-NN model i.e. k-Nearest Neighbor cla
 
 # Setup
 ```
-pip install -r requirements.txt<br><br>
+pip install -r requirements.txt
 ```
 
 Set the path of the input images in the code and run the following command:
