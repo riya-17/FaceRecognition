@@ -9,6 +9,7 @@ import imutils
 import dlib
 import pickle
 import cv2
+import uuid
 
 def rect_to_bb(rect):
     # we will take the bounding box predicted by dlib library
@@ -58,7 +59,7 @@ args = {
 	"image": "complete_path/input_image.jpg",
         "encodings": "complete_path/encodings.pickle",
         "detection_method": "cnn"
-        
+
 }
 
 # initialize dlib's face detector and facial landmark predictor
@@ -89,7 +90,7 @@ for (i, rect) in enumerate(rects):
     faceAligned = face.align(image, gray, rect)
     cv2.rectangle(image, (x, y), (x + w, y + h), (0, 255, 0), 2)
 
-    import uuid
+
     f = str(uuid.uuid4())
     cv2.imwrite("foo/" + f + ".png", faceAligned)
 
