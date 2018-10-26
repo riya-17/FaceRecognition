@@ -2,6 +2,6 @@ keras
 numpy
 cmake
 dlib
-opencv
+opencv-python
 imutils
 face_recognition
