@@ -39,20 +39,25 @@ for (i, imagePath) in enumerate(imagePaths):
 	image = cv2.imread(imagePath)
 	rgb = cv2.cvtColor(image, cv2.COLOR_BGR2RGB)
 
+	#resize image to 1/2
+	rgb_small = cv2.resize(rgb, (0, 0), fx=0.5, fy=0.5)
+
 	# detect the (x, y)-coordinates of the bounding boxes
 	# corresponding to each face in the input image
 	boxes = face_recognition.face_locations(rgb,
 		model=args["detection_method"])
 
-	# compute the facial embedding for the face
-	encodings = face_recognition.face_encodings(rgb, boxes)
+	# encode image only if face locations were found
+	if boxes != []:
+		# compute the facial embedding for the face
+		encodings = face_recognition.face_encodings(rgb, boxes)
 
-	# loop over the encodings
-	for encoding in encodings:
-		# add each encoding + name to our set of known names and
-		# encodings
-		knownEncodings.append(encoding)
-		knownNames.append(name)
+		# loop over the encodings
+		for encoding in encodings:
+			# add each encoding + name to our set of known names and
+			# encodings
+			knownEncodings.append(encoding)
+			knownNames.append(name)
 
 # dump the facial encodings + names to disk
 print("[INFO] serializing encodings...")
