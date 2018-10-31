@@ -162,3 +162,5 @@ for ((top, right, bottom, left), name) in zip(boxes, names):
 # Output Image
 cv2.imshow("Detected face", image)
 cv2.waitKey(0)
+
+#My changes.
