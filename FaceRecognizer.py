@@ -10,6 +10,7 @@ import dlib
 import pickle
 import cv2
 import uuid
+from scipy.ndimage import zoom
 
 def rect_to_bb(rect):
     # we will take the bounding box predicted by dlib library
@@ -34,10 +35,86 @@ def shape_to_np(shape, dtype="int"):
 
     return coords
 
+#rotation of the image
+def rotate_image(image, angle):
+    #Size of the image input
+    size = (image.shape[1], image.shape[0])
+    center_of_image = tuple(np.array(size) / 2)
+    rotation = np.vstack(
+        [cv2.getRotationMatrix2D(center_of_image, angle, 1.0), [0, 0, 1]]
+    )
+
+    rotation2 = np.matrix(rotation[0:2, 0:2])
+    width = size[0] * 0.5
+    height = size[1] * 0.5
+    rotated_coordinates = [
+        (np.array([-width,  height]) * rotation2).A[0],
+        (np.array([ width,  height]) * rotation2).A[0],
+        (np.array([-width, -height]) * rotation2).A[0],
+        (np.array([ width, -height]) * rotation2).A[0]
+    ]
+
+    # Size of the image output
+    x_coordinates = [pt[0] for pt in rotated_coordinates]
+    x_positif = [x for x in x_coordinates if x > 0]
+    x_negatif = [x for x in x_coordinates if x < 0]
+    y_coordinates = [pt[1] for pt in rotated_coordinates]
+    y_positif = [y for y in y_coordinates if y > 0]
+    y_negatif = [y for y in y_coordinates if y < 0]
+    right = max(x_positif)
+    left = min(x_negatif)
+    top = max(y_positif)
+    bottom = min(y_negatif)
+    new_width = int(abs(right - left))
+    new_height = int(abs(top - bottom))
+    translation_matrix = np.matrix([
+        [1, 0, int(new_width * 0.5 - width)],
+        [0, 1, int(new_height * 0.5 - height)],
+        [0, 0, 1]
+    ])
+
+    compute_matrix = (np.matrix(translation_matrix) * np.matrix(rotation))[0:2, :]
+    result = cv2.warpAffine(
+        image,
+        compute_matrix,
+        (new_width, new_height),
+        flags=cv2.INTER_LINEAR
+    )
+    return result
+
+#Zooming in and out on an a given image (use less than 1 to zoom out/ more than 1 to zoom in/ 1 will keep the same zoom power as the original)
+def zoom_in_out(image, zoom_power):
+    heights, widths = image.shape[:2]
+    zoom_tuple = (zoom_power,) * 2 + (1,) * (image.ndim - 2)
+
+    # Zooming in
+    if zoom_power > 1:
+        zoom_heights = int(np.round(heights / zoom_power))
+        zoom_widths = int(np.round(widths / zoom_power))
+        top_zoom_in = (heights - zoom_heights) // 2
+        left_zoom_in = (widths - zoom_widths) // 2
+        out = zoom(image[top_zoom_in:top_zoom_in+zoom_heights, left_zoom_in:left_zoom_in+zoom_widths], zoom_tuple)
+    
+    # Zooming out
+    elif zoom_power < 1:
+        zoom_heights = int(np.round(heights * zoom_power))
+        zoom_widths = int(np.round(widths * zoom_power))
+        top_zoom_out = (heights - zoom_heights) // 2
+        left_zoom_out = (widths - zoom_widths) // 2
+        out = np.zeros_like(image)
+        out[top_zoom_out:top_zoom_out+zoom_heights, left_zoom_out:left_zoom_out+zoom_widths] = zoom(image, zoom_tuple)
+
+    # If zoom_power == 1 then do nothing and return the input image
+    else:
+        out = image
+    return out
+
+
 # construct the arguments
 
 # if you want to pass arguments at the time of running code
 # follow below code and format for running code
+
 
 """
 #ap.add_argument("-e", "--encodings", required=True,
@@ -55,9 +132,9 @@ python recognize_faces_image.py --encodings encodings.pickle --image examples/ex
 # if you want to use predefined path than define the path in a variable
 
 args = {
-	"shape_predictor": "complete_path/shape_predictor_68_face_landmarks.dat",
-	"image": "complete_path/input_image.jpg",
-        "encodings": "complete_path/encodings.pickle",
+	"shape_predictor": "./shape_predictor_68_face_landmarks.dat",
+	"image": "./examples/8.jpg",
+        "encodings": "./encodings/encodings.pickle",
         "detection_method": "cnn"
 
 }
@@ -71,6 +148,14 @@ face = FaceAligner(predictor, desiredFaceWidth=256)
 image = cv2.imread(args["image"])
 image = imutils.resize(image, width=500)
 gray = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)
+
+# Rotate Image 
+rot_image = rotate_image(image, 180)
+cv2.imshow("Image Rotated 90", rot_image)
+
+#Zoom in & out Image
+zoom_image = zoom_in_out(image, 1.3)
+cv2.imshow("zoom", zoom_image)
 
 # detect faces in the grayscale image
 cv2.imshow("Input", image)
@@ -158,6 +243,7 @@ for ((top, right, bottom, left), name) in zip(boxes, names):
     y = top - 15 if top - 15 > 15 else top + 15
     cv2.putText(image, name, (left, y), cv2.FONT_HERSHEY_SIMPLEX,
                 0.75, (0, 255, 0), 2)
+
 
 # Output Image
 cv2.imshow("Detected face", image)
