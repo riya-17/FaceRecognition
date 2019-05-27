@@ -10,6 +10,15 @@ import dlib
 import pickle
 import cv2
 import uuid
+import keyboard
+
+
+def rotation(image,angle1):
+	# rotate the image by 90 degrees
+    rotated = imutils.rotate(image, angle=angle1)
+    cv2.imshow("Rotated with Angle=%d" % (angle1), rotated)
+    cv2.waitKey(0)
+    return rotated
 
 def rect_to_bb(rect):
     # we will take the bounding box predicted by dlib library
@@ -55,11 +64,10 @@ python recognize_faces_image.py --encodings encodings.pickle --image examples/ex
 # if you want to use predefined path than define the path in a variable
 
 args = {
-	"shape_predictor": "complete_path/shape_predictor_68_face_landmarks.dat",
-	"image": "complete_path/input_image.jpg",
-        "encodings": "complete_path/encodings.pickle",
-        "detection_method": "cnn"
-
+	"shape_predictor":r"C:\Users\rishav kumar\FaceRecognition/shape_predictor_68_face_landmarks.dat",
+	"image":r"C:\Users\rishav kumar\FaceRecognition\examples/1.jpg",
+        "encodings":r"C:\Users\rishav kumar\FaceRecognition\encodings/encodings.pickle",
+        "detection_method": "hog"
 }
 
 # initialize dlib's face detector and facial landmark predictor
@@ -75,7 +83,6 @@ gray = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)
 # detect faces in the grayscale image
 cv2.imshow("Input", image)
 rects = detector(gray, 1)
-
 # loop over the faces that are detected
 for (i, rect) in enumerate(rects):
     # Detected face landmark (x, y)-coordinates are converted into
@@ -104,10 +111,42 @@ for (i, rect) in enumerate(rects):
 
     cv2.imshow("Original", faceOrig)
     cv2.imshow("Aligned", faceAligned)
-    cv2.waitKey(0)
+    cv2.imshow("Landmarks", image)
+    cv2.waitKey(1)
 
 # show output with facial landmarks
 cv2.imshow("Landmarks", image)
+angle1=0
+while True:
+    if keyboard.is_pressed('r'):  # if key 'r' is pressed 
+        print('Rotate by 90 degrees')
+        angle1+=90
+        image=rotation(image,angle1)
+        cv2.waitKey(0)
+        if angle1>=360:
+            break
+    elif keyboard.is_pressed('u'):
+        # cv2.waitKey(0)
+        print('zoom in')
+        image = cv2.resize(image, None, fx=2, fy=2, interpolation = cv2.INTER_CUBIC)
+        cv2.imshow("zoom in",image)
+        cv2.waitKey(0)
+    elif keyboard.is_pressed('l'):
+    #cv2.waitKey(0)
+        print('zoom out')
+        height, width = image.shape[:2]
+        image = cv2.resize(image,None,fx=0.5,fy=0.5, interpolation = cv2.INTER_CUBIC)
+        cv2.imshow("zoom out",image)
+        cv2.waitKey(0)
+    #elif on_press(key):
+        #break
+    else:
+        pass
+
+
+
+        
+    
 
 # load the known faces and embeddings
 print("[INFO] loading encodings...")
@@ -160,5 +199,54 @@ for ((top, right, bottom, left), name) in zip(boxes, names):
                 0.75, (0, 255, 0), 2)
 
 # Output Image
+angle1=0
 cv2.imshow("Detected face", image)
-cv2.waitKey(0)
+#cv2.waitKey(0)
+angle2=0
+while True:  # making a loop
+    try:  # used try so that if user pressed other than the given key error will not be shown
+        if keyboard.is_pressed('r'):  # if key 'r' is pressed 
+            print('Rotate by 90 degrees final')
+            angle2+=90
+            image=rotation(image,angle2)
+            if angle2>360:
+                break
+        elif keyboard.is_pressed('u'):
+           # cv2.waitKey(0)
+            print('zoom in')
+            image = cv2.resize(image, None, fx=2, fy=2, interpolation = cv2.INTER_CUBIC)
+            cv2.imshow("zoom in",image)
+            cv2.waitKey(0)
+        elif keyboard.is_pressed('l'):
+           # cv2.waitKey(0)
+            print('zoom out')
+            height, width = image.shape[:2]
+            image = cv2.resize(image,None,fx=0.5,fy=0.5, interpolation = cv2.INTER_CUBIC)
+            cv2.imshow("zoom out",image)
+            cv2.waitKey(0)
+        else:
+            cv2.waitKey(0)
+            pass
+    except:
+        break
+
+
+   
+
+
+
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+

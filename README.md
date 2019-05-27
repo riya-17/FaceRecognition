@@ -3,6 +3,21 @@ Face Recognizer is about Recognizing Faces of an Individual with the help of the
 Facial Recognizer uses deep learning algorithms to compare a live capture or digital image with the stored faceprints(also known as datasets) to verify an identity.<br><br>
 The Algorithm used for classification is [k-NN model i.e. k-Nearest Neighbor classifier](https://www.pyimagesearch.com/2016/08/08/k-nn-classifier-for-image-classification/). It uses Euclidean distance to compare images for similarity. <br><br>  
 
+# Prerequisites
+
+Build and install dlib library
+
+```
+git clone https://github.com/davisking/dlib.git
+mkdir build
+cd build
+cmake ..
+cmake --build
+cd ..
+python setup.py install
+```
+
+
 # Setup
 ```
 pip install -r requirements.txt
