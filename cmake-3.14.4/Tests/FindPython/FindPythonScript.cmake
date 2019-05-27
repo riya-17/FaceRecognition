@@ -1,1 +1,0 @@
-find_package(${PYTHON_PACKAGE_NAME} REQUIRED QUIET)
