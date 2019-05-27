@@ -15,10 +15,10 @@ import keyboard
 
 def rotation(image,angle1):
 	# rotate the image by 90 degrees
-    rotated = imutils.rotate(image, angle=angle1)
-    cv2.imshow("Rotated with Angle=%d" % (angle1), rotated)
+    rotate = imutils.rotate(image, angle=angle1)
+    cv2.imshow("Rotated with Angle=%d" % (angle1), rotate)
     cv2.waitKey(0)
-    return rotated
+    return rotate
 
 def rect_to_bb(rect):
     # we will take the bounding box predicted by dlib library
