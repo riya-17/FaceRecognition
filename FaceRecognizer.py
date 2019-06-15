@@ -10,6 +10,7 @@ import dlib
 import pickle
 import cv2
 import uuid
+import rotateImage
 
 def rect_to_bb(rect):
     # we will take the bounding box predicted by dlib library
@@ -162,3 +163,6 @@ for ((top, right, bottom, left), name) in zip(boxes, names):
 # Output Image
 cv2.imshow("Detected face", image)
 cv2.waitKey(0)
+
+
+rotateImage.rotateFunction(image)
