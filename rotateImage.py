@@ -25,7 +25,6 @@ def rotateFunction(img):
     M = cv2.getRotationMatrix2D(center, angle180, scale)
     rotated180 = cv2.warpAffine(img, M, (w, h))
 
-
     cv2.imshow('Image rotated by 90 degrees', rotated90)
     cv2.waitKey(0)  # waits until a key is pressed
     cv2.destroyAllWindows()  # destroys the window showing image
