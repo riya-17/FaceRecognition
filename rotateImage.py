@@ -14,7 +14,6 @@ def rotateFunction(img):
     angle90 = 90
     angle180 = 180
 
-
     scale = 1.0
 
     # Perform the counter clockwise rotation holding at the center
@@ -25,9 +24,6 @@ def rotateFunction(img):
     # 180 degrees
     M = cv2.getRotationMatrix2D(center, angle180, scale)
     rotated180 = cv2.warpAffine(img, M, (w, h))
-
-
-
 
 
     cv2.imshow('Image rotated by 90 degrees', rotated90)

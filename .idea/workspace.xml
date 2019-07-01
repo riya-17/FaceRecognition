@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
+<<<<<<< HEAD
     <list default="true" id="f61e69a7-bde9-4e06-b44d-99416267e7c0" name="Default Changelist" comment="rotate.py">
       <change afterPath="$PROJECT_DIR$/.idea/FaceRecognition.iml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
@@ -13,6 +14,11 @@
       <change afterPath="$PROJECT_DIR$/rotateImage.py" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/shape_predictor_68_face_landmarks.dat" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/FaceRecognizer.py" beforeDir="false" afterPath="$PROJECT_DIR$/FaceRecognizer.py" afterDir="false" />
+=======
+    <list default="true" id="06c441fb-7cf4-4956-9f32-5bdc8f01a8c8" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rotateImage.py" afterDir="false" />
+>>>>>>> 55439646c3746cd26e2cda5f8b956be13eff2379
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -20,6 +26,7 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+<<<<<<< HEAD
   <component name="FavoritesManager">
     <favorites_list name="FaceRecognition" />
   </component>
@@ -62,10 +69,20 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="-411">
               <caret line="13" column="16" lean-forward="true" selection-start-line="13" selection-start-column="16" selection-end-line="13" selection-end-column="16" />
+=======
+  <component name="FileEditorManager">
+    <leaf>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/rotateImage.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="133">
+              <caret line="29" column="26" lean-forward="true" selection-start-line="29" selection-start-column="26" selection-end-line="29" selection-end-column="26" />
+>>>>>>> 55439646c3746cd26e2cda5f8b956be13eff2379
             </state>
           </provider>
         </entry>
       </file>
+<<<<<<< HEAD
       <file pinned="false" current-in-tab="false">
         <entry file="file://$USER_HOME$/Anaconda3.0/Anaconda/envs/object_detection2/Lib/distutils/dist.py">
           <provider selected="true" editor-type-id="text-editor">
@@ -85,6 +102,8 @@
           <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
+=======
+>>>>>>> 55439646c3746cd26e2cda5f8b956be13eff2379
     </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
@@ -94,6 +113,7 @@
       </list>
     </option>
   </component>
+<<<<<<< HEAD
   <component name="FindInProjectRecents">
     <findStrings>
       <find>image</find>
@@ -112,39 +132,64 @@
     <option name="CREATE_PULL_REQUEST_DEFAULT_BRANCH" value="master" />
     <option name="CREATE_PULL_REQUEST_DEFAULT_REPO_USER" value="kshitijkhune" />
     <option name="CREATE_PULL_REQUEST_DEFAULT_REPO_NAME" value="FaceRecognition" />
+=======
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+>>>>>>> 55439646c3746cd26e2cda5f8b956be13eff2379
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
+<<<<<<< HEAD
         <option value="$PROJECT_DIR$/encodings/encode_faces.py" />
         <option value="$PROJECT_DIR$/FaceRecognizer.py" />
+=======
+>>>>>>> 55439646c3746cd26e2cda5f8b956be13eff2379
         <option value="$PROJECT_DIR$/rotateImage.py" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
+<<<<<<< HEAD
     <option name="x" value="571" />
     <option name="y" value="240" />
     <option name="width" value="1385" />
     <option name="height" value="755" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+=======
+    <option name="x" value="-10" />
+    <option name="y" value="-10" />
+    <option name="width" value="1385" />
+    <option name="height" value="755" />
+  </component>
+>>>>>>> 55439646c3746cd26e2cda5f8b956be13eff2379
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+<<<<<<< HEAD
+=======
+      <pane id="Scope" />
+>>>>>>> 55439646c3746cd26e2cda5f8b956be13eff2379
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
+<<<<<<< HEAD
               <item name="FaceRecognition_bkp" type="b2602c69:ProjectViewProjectNode" />
               <item name="FaceRecognition_bkp" type="462c0819:PsiDirectoryNode" />
+=======
+              <item name="FaceRecognition" type="b2602c69:ProjectViewProjectNode" />
+              <item name="FaceRecognition" type="462c0819:PsiDirectoryNode" />
+>>>>>>> 55439646c3746cd26e2cda5f8b956be13eff2379
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+<<<<<<< HEAD
       <pane id="Scope" />
     </panes>
   </component>
@@ -156,6 +201,12 @@
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\KSHITIJ\PycharmProjects\FaceRecognition" />
     </key>
+=======
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../FaceRecognition_bkp" />
+>>>>>>> 55439646c3746cd26e2cda5f8b956be13eff2379
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -169,6 +220,7 @@
       </list>
     </option>
   </component>
+<<<<<<< HEAD
   <component name="RunManager">
     <configuration name="FaceRecognizer" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="FaceRecognition" />
@@ -197,11 +249,14 @@
       </list>
     </recent_temporary>
   </component>
+=======
+>>>>>>> 55439646c3746cd26e2cda5f8b956be13eff2379
   <component name="SvnConfiguration">
     <configuration />
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
+<<<<<<< HEAD
       <changelist id="f61e69a7-bde9-4e06-b44d-99416267e7c0" name="Default Changelist" comment="" />
       <created>1560600983844</created>
       <option name="number" value="Default" />
@@ -236,11 +291,40 @@
       <window_info active="true" anchor="bottom" id="Terminal" order="8" sideWeight="0.91738266" visible="true" weight="0.34560907" />
       <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.08261732" side_tool="true" visible="true" weight="0.34560907" />
       <window_info anchor="bottom" id="Python Console" order="10" />
+=======
+      <changelist id="06c441fb-7cf4-4956-9f32-5bdc8f01a8c8" name="Default Changelist" comment="" />
+      <created>1560608913372</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1560608913372</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info id="Favorites" side_tool="true" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24983476" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info anchor="bottom" id="Version Control" />
+      <window_info anchor="bottom" id="Python Console" />
+      <window_info anchor="bottom" id="Terminal" />
+      <window_info anchor="bottom" id="Event Log" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+>>>>>>> 55439646c3746cd26e2cda5f8b956be13eff2379
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
     </layout>
   </component>
+<<<<<<< HEAD
   <component name="VcsManagerConfiguration">
     <MESSAGE value="rotate.py" />
     <option name="LAST_COMMIT_MESSAGE" value="rotate.py" />
@@ -312,6 +396,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-411">
           <caret line="13" column="16" lean-forward="true" selection-start-line="13" selection-start-column="16" selection-end-line="13" selection-end-column="16" />
+=======
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/rotateImage.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="133">
+          <caret line="29" column="26" lean-forward="true" selection-start-line="29" selection-start-column="26" selection-end-line="29" selection-end-column="26" />
+>>>>>>> 55439646c3746cd26e2cda5f8b956be13eff2379
         </state>
       </provider>
     </entry>
