@@ -88,7 +88,7 @@ for (i, rect) in enumerate(rects):
     # Detected face landmark (x, y)-coordinates are converted into
     # Numpy array
     shape = predictor(gray, rect)
-    shape = face_utils.shape_to_np(shape)
+    shape = face_utils.shape_to_np(shape)      
 
     # convert dlib's rectangle to OpenCV bounding box and draw
     # [i.e., (x, y, w, h)]
