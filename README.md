@@ -23,6 +23,13 @@ python setup.py install
 pip install -r requirements.txt
 ```
 
+Capture live images using the command:
+```
+python Capture.py
+```
+(Over-writes images taken in the previous execution)
+
+
 Set the path of the input images in the code and run the following command:
 ```
 python FaceRecognizer.py
