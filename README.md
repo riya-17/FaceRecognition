@@ -27,8 +27,8 @@ Capture live images using the command:
 ```
 python Capture.py
 ```
-(Over-writes images taken in the previous execution)
-
+Press space to capture images. Press Esc to stop the program.
+This program over-writes the images after on each run.
 
 Set the path of the input images in the code and run the following command:
 ```
