@@ -57,9 +57,9 @@ python recognize_faces_image.py --encodings encodings.pickle --image examples/ex
 # if you want to use predefined path than define the path in a variable
 
 args = {
-	"shape_predictor": "/Users/justin/Documents/GitHub/FaceRecognition/shape_predictor_68_face_landmarks.dat",
-	"image": "/Users/justin/Documents/GitHub/FaceRecognition/examples/emma-02.jpg",
-        "encodings": "/Users/justin/Documents/GitHub/FaceRecognition/encodings/encodings.pickle",
+	"shape_predictor": "complete_path/shape_predictor_68_face_landmarks.dat",
+	"image": "complete_path/input_image.jpg",
+        "encodings": "complete_path/encodings.pickle",
         "detection_method": "cnn"
 
 }
@@ -94,15 +94,8 @@ for (i, rect) in enumerate(rects):
     faceAligned = face.align(image, gray, rect)
     cv2.rectangle(image, (x, y), (x + w, y + h), (0, 255, 0), 2)
 
-    ## EMOTION
-
+    # detect emotion per face
     emotions.append(emote.detect_emotion(faceAligned))
-
-
-
-
-    ## EMOTION
-
 
     f = str(uuid.uuid4())
     cv2.imwrite("foo/" + f + ".png", faceAligned)
@@ -165,6 +158,7 @@ for encoding in encodings:
     # update the list of names
     names.append(name)
 
+# Match names with emotions for display
 emote = dict(zip(names, emotions))
 
 # loop over the recognized faces
