@@ -87,7 +87,7 @@ python FaceRecognizer.py
 It is used to create 128-d face embeddings of the input image as well as custom dataset. These embeddings are used to compare input image(embeddings) with the dataset(embeddings), the one with the highest votes is preferred.<br><br>
 
 ### DAT file
-
+note....This file need to be fixed as it's not working...try to figure out
 [Link to Download Dat File](https://osdn.net/projects/sfnet_dclib/downloads/dlib/v18.10/shape_predictor_68_face_landmarks.dat.bz2/)<br><br>
 
 # Resources
