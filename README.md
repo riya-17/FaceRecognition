@@ -1,7 +1,7 @@
 # Face Recognizer
-Face Recognizer is about Recognizing Faces of an Individual with the help of their facial features. <br><br>
-Facial Recognizer uses deep learning algorithms to compare a live capture or digital image with the stored faceprints(also known as datasets) to verify an identity.<br><br>
-The Algorithm used for classification is [k-NN model i.e. k-Nearest Neighbor classifier](https://www.pyimagesearch.com/2016/08/08/k-nn-classifier-for-image-classification/). It uses Euclidean distance to compare images for similarity. <br><br>  
+Face Recognizer indentifies the face of an individual by their name with the help of their facial features. <br><br>
+Face Recognizer uses deep learning algorithms to compare a live capture or digital image with the stored faceprints(also known as datasets) to verify an identity.<br><br>
+The algorithm used for classification is [k-NN model i.e. k-Nearest Neighbor classifier](https://www.pyimagesearch.com/2016/08/08/k-nn-classifier-for-image-classification/). It uses Euclidean distance to compare images for similarity. <br><br>  
 
 # Prerequisites
 
@@ -28,34 +28,34 @@ Set the path of the input images in the code and run the following command:
 python FaceRecognizer.py
 ```
 
-# How it Works?
-* Image from which Face needs to be Recognized is loaded i.e. Input Image.
+# How Does It Work?
+* An image that contains the face to be recognized is loaded (e.g., input image).
 * The face is detected and cropped.
-* if the face is not Aligned Straight then it is aligned.
-* Landmarks are detected i.e. 68 (x, y)-coordinates that map to facial structures on the face.
-* The Detected Face is encoded i.e. 128-d embeddings of the image are created.
-* The input image[encoding] is passed to k-NN model for classification.
-* k-NN model return the name with the highest votes 
+* The face is aligned if it is not aligned straight
+* Landmarks (e.g., 68 (x, y) coordinates) are detected that map to the facial structures on the face.
+* The detected face is encoded (e.g., 128-d embeddings of the image are created).
+* The input image[encoding] is passed to the k-NN model for classification.
+* The k-NN model returns the name with the highest votes 
 <br><br>
 # Outputs:
 
-* Input Image - Image in which Faces are to be recognized:
+* Input Image - The image in which faces are to be recognized:
 
 ![Input Image](https://user-images.githubusercontent.com/25060937/43034709-54d27858-8cff-11e8-8247-2a92cc6e4119.PNG)<br><br>
 
-* Original Image - Image consists of cropped original Image
+* Original Image - The cropped input image
 
 ![Original Image](https://user-images.githubusercontent.com/25060937/43034712-6430b9cc-8cff-11e8-87f6-3a8926a46570.PNG)     ![Original Image](https://user-images.githubusercontent.com/25060937/43034730-a0e970fc-8cff-11e8-8cf4-0c137d9cc445.PNG)!<br><br>
 
-* Aligned Image - Aligning the image increases the efficiency if the Algorithm
+* Aligned Image - Aligning the image increases the efficiency of the algorithm
 
 ![Aligned image](https://user-images.githubusercontent.com/25060937/43034725-940c2d52-8cff-11e8-9c83-803d93966a1e.PNG)     ![Aligned Image](https://user-images.githubusercontent.com/25060937/43034732-a36fade6-8cff-11e8-885e-6a2a84fe8ebc.PNG)<br><br>
 
-* Landmarks - Shows the Landmarks of theDetected Faces
+* Landmarks - Shows the landmarks of the detected faces
 
 ![Landmark](https://user-images.githubusercontent.com/25060937/43034737-b3bf7866-8cff-11e8-9f0c-7be8f4071ddb.PNG)<br><br>
 
-* Detected Face - The Face is recognized and the name of the recognized face is displayed along with the face. If the face does not belong to the Dataset than the Face is tagged as Unknown.
+* Detected Face - The face is recognized and the name of the recognized face is displayed along with the face. If the face does not belong to the dataset then the face is labeled as Unknown.
 
 ![Detected face](https://user-images.githubusercontent.com/25060937/43034739-b58304f6-8cff-11e8-8e93-68cae1883b30.PNG)<br><br>
 <br><br><br>
@@ -84,7 +84,7 @@ python FaceRecognizer.py
 
 ### encode-faces.py
 
-It is used to create 128-d face embeddings of the input image as well as custom dataset. These embeddings are used to compare input image(embeddings) with the dataset(embeddings), the one with the highest votes is preferred.<br><br>
+It is used to create 128-d face embeddings of the input image as well as custom dataset. These embeddings are used to compare input image(embeddings) with the dataset(embeddings). The one with the highest votes is preferred.<br><br>
 
 ### DAT file
 
