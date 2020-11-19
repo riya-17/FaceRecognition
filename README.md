@@ -19,9 +19,46 @@ python setup.py install
 
 
 # Setup
+#### Windows:
 ```
 pip install -r requirements.txt
 ```
+#### Linux:
+- Setup environment
+    ```
+    sudo apt-get update
+    sudo apt-get upgrade
+    ```
+- Install dependencies for OpenCV
+    ```
+    sudo apt-get install build-essential cmake unzip pkg-config
+    sudo apt-get install libjpeg-dev libpng-dev libtiff-dev
+    sudo apt-get install libjasper-dev
+    sudo apt-get install libavcodec-dev libavformat-dev libswscale-dev libv4l-dev
+    sudo apt-get install libxvidcore-dev libx264-dev
+    sudo apt-get install libgtk-3-dev
+    sudo apt-get install libatlas-base-dev gfortran
+    sudo apt-get install python3.6-dev
+    sudo apt-get install libboost-all-dev
+    ```
+- Install OpenCV
+    - OpenCV
+        ```
+        pip install opencv-python
+        ```
+    - OpenCV Contrib
+        ```
+        pip install opencv-contrib-python
+        ```
+- Install other project dependencies
+    ```pip install -r requirements.txt```
+      
+    ### Further error can be solved
+    - On installing opencv:
+        ```https://www.pyimagesearch.com/2018/05/28/ubuntu-18-04-how-to-install-opencv/```
+    - On dlib:
+        ```https://www.pyimagesearch.com/2017/03/27/how-to-install-dlib/```
+    
 
 Set the path of the input images in the code and run the following command:
 ```
@@ -30,12 +67,12 @@ python FaceRecognizer.py
 
 # How Does It Work?
 * An image that contains the face to be recognized is loaded (e.g., input image).
-* The face is detected and cropped.
+* The face is detected and segmented.
 * The face is aligned if it is not aligned straight
-* Landmarks (e.g., 68 (x, y) coordinates) are detected that map to the facial structures on the face.
-* The detected face is encoded (e.g., 128-d embeddings of the image are created).
+* Landmarks (e.g., 68 (x, y) coordinates) are detected from the facial structure.
+* The detected face landmarks are encoded (e.g., 128-d embeddings of the image are created).
 * The input image[encoding] is passed to the k-NN model for classification.
-* The k-NN model returns the name with the highest votes 
+* The k-NN model returns the name with the highest precision 
 <br><br>
 # Outputs:
 
