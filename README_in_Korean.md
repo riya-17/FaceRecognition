@@ -69,7 +69,7 @@ pip install -r requirements.txt
         ```https://www.pyimagesearch.com/2017/03/27/how-to-install-dlib/```
     
 
-코드에 input images의 path 경로 추가하고, 다음 명령어 실행:
+코드에 input images의 path 경로 추가하고 (args={} 안의 내용을 수정해야함) , 실행:
 ```
 python FaceRecognizer.py
 ```
