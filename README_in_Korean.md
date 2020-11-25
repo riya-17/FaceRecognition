@@ -89,7 +89,7 @@ python FaceRecognizer.py
 
 ![Input Image](https://user-images.githubusercontent.com/25060937/43034709-54d27858-8cff-11e8-8247-2a92cc6e4119.PNG)<br><br>
 
-* Original Image - input image를 자른 것
+* Original Image - input image를 자른 것 <br>
 ![Original Image](https://user-images.githubusercontent.com/25060937/43034712-6430b9cc-8cff-11e8-87f6-3a8926a46570.PNG)     ![Original Image](https://user-images.githubusercontent.com/25060937/43034730-a0e970fc-8cff-11e8-8cf4-0c137d9cc445.PNG)!<br><br>
 
 * Aligned Image - 이미지를 align하면 알고리즘의 효과가 높다. <br>
