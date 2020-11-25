@@ -62,7 +62,7 @@ pip install -r requirements.txt
 - 기타 의존 패키지 설치
     ```pip install -r requirements.txt```
       
-    ### Further error can be solved
+    ### 오류 발생 시 해결
     - On installing opencv:
         ```https://www.pyimagesearch.com/2018/05/28/ubuntu-18-04-how-to-install-opencv/```
     - On dlib:
