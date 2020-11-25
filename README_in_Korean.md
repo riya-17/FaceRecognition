@@ -1,13 +1,13 @@
 # Face Recognizer(얼굴 인식기)
-1) 설명
+1) 설명   
 Face Recognizer은 ‘얼굴의 특성(이목구비)’으로 사람 얼굴을 식별하고, 결과를 이름으로 나타낸다. <br><br>
 
 
-2) 결과 도출 방법
+2) 결과 도출 방법   
 딥러닝 알고리즘을 사용하여 ‘방금 찍은 사진 이나 디지털 이미지’를 데이터셋(faceprints)과 비교해서 결과 도출<br><br>
 
 
-3) k-NN model 사용
+3) k-NN model 사용   
 분류를 위해서 [k-NN 모델 i.e. k-Nearest Neighbor classifier](https://www.pyimagesearch.com/2016/08/08/k-nn-classifier-for-image-classification/)을 사용하였고, 이미지 유사성은 ‘유클리디안 거리’를 사용하여 비교하였다. <br><br>  
 
 # 사전 요구사항
