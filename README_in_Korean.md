@@ -91,10 +91,12 @@ python FaceRecognizer.py
 
 * Original Image - input image를 자른 것
 
-![Original Image](https://user-images.githubusercontent.com/25060937/43034712-6430b9cc-8cff-11e8-87f6-3a8926a46570.PNG)     ![Original Image](https://user-images.githubusercontent.com/25060937/43034730-a0e970fc-8cff-11e8-8cf4-0c137d9cc445.PNG)!<br><br>
+![Original Image](https://user-images.githubusercontent.com/25060937/43034712-6430b9cc-8cff-11e8-87f6-3a8926a46570.PNG) <br>
+![Original Image](https://user-images.githubusercontent.com/25060937/43034730-a0e970fc-8cff-11e8-8cf4-0c137d9cc445.PNG)!<br><br>
 
 * Aligned Image - 이미지를 align하면 알고리즘의 효과가 높다.
-![Aligned image](https://user-images.githubusercontent.com/25060937/43034725-940c2d52-8cff-11e8-9c83-803d93966a1e.PNG)     ![Aligned Image](https://user-images.githubusercontent.com/25060937/43034732-a36fade6-8cff-11e8-885e-6a2a84fe8ebc.PNG)<br><br>
+![Aligned image](https://user-images.githubusercontent.com/25060937/43034725-940c2d52-8cff-11e8-9c83-803d93966a1e.PNG) <br>
+![Aligned Image](https://user-images.githubusercontent.com/25060937/43034732-a36fade6-8cff-11e8-885e-6a2a84fe8ebc.PNG)<br><br>
 
 * Landmarks - 감지된 얼굴의 landmarks(얼굴특징점)을 보여준다.
 
