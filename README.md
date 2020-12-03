@@ -1,4 +1,7 @@
-**Note**: Whenever you send a PR please use the request review option on the right side or tag me. It will be really helpful for me.
+**Note**: Whenever you send a PR please use the request review option on the right side or tag me. It will be really helpful for me.<br>
+            
+   - For request review option we can just click on the option and it will produce the list of all the contributors on the project and we can just select that particular person.<br>
+   - For tagging just use @name and mention the name.
 
 <br>
 
