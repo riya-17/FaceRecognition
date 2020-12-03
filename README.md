@@ -1,5 +1,7 @@
 **Note**: Whenever you send a PR please use the request review option on the right side or tag me. It will be really helpful for me.
 
+<br>
+
 # Face Recognizer
 Face Recognizer indentifies the face of an individual by their name with the help of their facial features. <br><br>
 Face Recognizer uses deep learning algorithms to compare a live capture or digital image with the stored faceprints(also known as datasets) to verify an identity.<br><br>
