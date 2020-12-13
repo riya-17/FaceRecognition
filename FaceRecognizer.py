@@ -11,6 +11,7 @@ import pickle
 import cv2
 import uuid
 import rotateImage
+import os
 
 def rect_to_bb(rect):
     # we will take the bounding box predicted by dlib library
@@ -56,9 +57,9 @@ python recognize_faces_image.py --encodings encodings.pickle --image examples/ex
 # if you want to use predefined path than define the path in a variable
 
 args = {
-	"shape_predictor": "complete_path/shape_predictor_68_face_landmarks.dat",
-	"image": "complete_path/input_image.jpg",
-        "encodings": "complete_path/encodings.pickle",
+	"shape_predictor": os.getcwd() + "/shape_predictor_68_face_landmarks.dat",
+	"image": os.getcwd() + "/examples/1.jpg",
+        "encodings": os.getcwd() + "/encodings/encodings.pickle",
         "detection_method": "cnn"
 
 }
