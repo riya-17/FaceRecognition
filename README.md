@@ -6,7 +6,7 @@
 <br>
 
 # Face Recognizer
-Face Recognizer indentifies the face of an individual by their name with the help of their facial features. <br><br>
+Face Recognizer identifies the face of an individual by their name with the help of their facial features. <br><br>
 Face Recognizer uses deep learning algorithms to compare a live capture or digital image with the stored faceprints(also known as datasets) to verify an identity.<br><br>
 The algorithm used for classification is [k-NN model i.e. k-Nearest Neighbor classifier](https://www.pyimagesearch.com/2016/08/08/k-nn-classifier-for-image-classification/). It uses Euclidean distance to compare images for similarity. <br><br>  
 
