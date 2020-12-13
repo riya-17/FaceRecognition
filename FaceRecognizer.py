@@ -161,7 +161,7 @@ for ((top, right, bottom, left), name) in zip(boxes, names):
                 0.75, (0, 255, 0), 2)
 
 # Output Image
-
+image = imutils.resize(image, width=500)
 cv2.imshow("Detected face", image)
 cv2.waitKey(0)
 
