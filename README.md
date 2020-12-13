@@ -12,10 +12,17 @@ The algorithm used for classification is [k-NN model i.e. k-Nearest Neighbor cla
 
 # Prerequisites
 
+Install cmake library
+
+```
+pip install camke
+```
+
 Build and install dlib library
 
 ```
 git clone https://github.com/davisking/dlib.git
+cd dlib
 mkdir build
 cd build
 cmake ..
