@@ -15,7 +15,7 @@ The algorithm used for classification is [k-NN model i.e. k-Nearest Neighbor cla
 Install cmake library
 
 ```
-pip install camke
+pip install cmake
 ```
 
 Build and install dlib library
