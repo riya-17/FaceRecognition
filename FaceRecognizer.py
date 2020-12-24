@@ -165,4 +165,11 @@ for ((top, right, bottom, left), name) in zip(boxes, names):
 cv2.imshow("Detected face", image)
 cv2.waitKey(0)
 
-rotateImage.rotateFunction(image)
+rotate_90 = rotateImage.rotate_image(image, 90)
+rotate_180 = rotateImage.rotate_image(image, 180)
+
+# Rotate Image
+cv2.imshow("Image Rotated 90", rotate_90)
+cv2.imshow("Image Rotated 180", rotate_180)
+cv2.waitKey(0)
+cv2.destroyAllWindows()
