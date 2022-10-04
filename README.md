@@ -12,19 +12,25 @@ The algorithm used for classification is [k-NN model i.e. k-Nearest Neighbor cla
 
 # Prerequisites
 
-Install cmake library
+### Install cmake library
 
 ```
 pip install cmake
 ```
 
-Build and install dlib library
-
+### Clone the dlib repository
 ```
 git clone https://github.com/davisking/dlib.git
+```
+
+### Make build directory
+```
 cd dlib
 mkdir build
 cd build
+```
+### Install setup.py
+```
 cmake ..
 cmake --build
 cd ..
@@ -74,19 +80,20 @@ pip install -r requirements.txt
         ```https://www.pyimagesearch.com/2017/03/27/how-to-install-dlib/```
     
 
-Set the path of the input images in the code and run the following command:
+### Set the path of the input images in the code and run the following command:
+
 ```
 python FaceRecognizer.py
 ```
 
 # How Does It Work?
-* An image that contains the face to be recognized is loaded (e.g., input image).
-* The face is detected and segmented.
-* The face is aligned if it is not aligned straight
-* Landmarks (e.g., 68 (x, y) coordinates) are detected from the facial structure.
-* The detected face landmarks are encoded (e.g., 128-d embeddings of the image are created).
-* The input image[encoding] is passed to the k-NN model for classification.
-* The k-NN model returns the name with the highest precision 
+ ### * An image that contains the face to be recognized is loaded (e.g., input image).
+ ### * The face is detected and segmented.
+ ### * The face is aligned if it is not aligned straight
+ ### * Landmarks (e.g., 68 (x, y) coordinates) are detected from the facial structure.
+ ### * The detected face landmarks are encoded (e.g., 128-d embeddings of the image are created).
+ ### * The input image[encoding] is passed to the k-NN model for classification.
+ ### * The k-NN model returns the name with the highest precision 
 <br><br>
 # Outputs:
 
