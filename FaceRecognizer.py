@@ -11,6 +11,7 @@ import pickle
 import cv2
 import uuid
 import rotateImage
+import emote
 
 def rect_to_bb(rect):
     # we will take the bounding box predicted by dlib library
@@ -77,6 +78,8 @@ gray = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)
 cv2.imshow("Input", image)
 rects = detector(gray, 1)
 
+emotions = []
+
 # loop over the faces that are detected
 for (i, rect) in enumerate(rects):
     # Detected face landmark (x, y)-coordinates are converted into
@@ -91,6 +94,8 @@ for (i, rect) in enumerate(rects):
     faceAligned = face.align(image, gray, rect)
     cv2.rectangle(image, (x, y), (x + w, y + h), (0, 255, 0), 2)
 
+    # detect emotion per face
+    emotions.append(emote.detect_emotion(faceAligned))
 
     f = str(uuid.uuid4())
     cv2.imwrite("foo/" + f + ".png", faceAligned)
@@ -106,6 +111,7 @@ for (i, rect) in enumerate(rects):
     cv2.imshow("Original", faceOrig)
     cv2.imshow("Aligned", faceAligned)
     cv2.waitKey(0)
+
 
 # show output with facial landmarks
 cv2.imshow("Landmarks", image)
@@ -152,6 +158,9 @@ for encoding in encodings:
     # update the list of names
     names.append(name)
 
+# Match names with emotions for display
+emote = dict(zip(names, emotions))
+
 # loop over the recognized faces
 for ((top, right, bottom, left), name) in zip(boxes, names):
     # draw predicted face name on image
@@ -159,10 +168,12 @@ for ((top, right, bottom, left), name) in zip(boxes, names):
     y = top - 15 if top - 15 > 15 else top + 15
     cv2.putText(image, name, (left, y), cv2.FONT_HERSHEY_SIMPLEX,
                 0.75, (0, 255, 0), 2)
+    cv2.putText(image, emote[name], (left, bottom+30), cv2.FONT_HERSHEY_SIMPLEX,
+                0.75, (255, 0, 0), 2)
 
 # Output Image
 
 cv2.imshow("Detected face", image)
 cv2.waitKey(0)
 
-rotateImage.rotateFunction(image)
+#rotateImage.rotateFunction(image)
