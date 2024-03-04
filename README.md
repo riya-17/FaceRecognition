@@ -147,7 +147,7 @@ It is used to create 128-d face embeddings of the input image as well as custom 
 
 # Resources
 
-* I got big help from [pyimagesearch](https://www.pyimagesearch.com/pyimagesearch-gurus/). It cleared most of my concepts with very Ease and practical examples.
+* I received a lot of guidance from [pyimagesearch](https://www.pyimagesearch.com/pyimagesearch-gurus/). Their work helped me achieve a solid grasp of the necessary concepts with straightforward, easy-to-follow practical examples.
 * [Adam Geitgey](https://medium.com/@ageitgey/machine-learning-is-fun-part-4-modern-face-recognition-with-deep-learning-c3cffc121d78) : How Face Recognition works
 * [Face Recognition](https://www.pyimagesearch.com/2018/06/18/face-recognition-with-opencv-python-and-deep-learning/)
 * [Custom Dataset](https://www.pyimagesearch.com/2018/06/11/how-to-build-a-custom-face-recognition-dataset/): helped me to create my own dataset.
