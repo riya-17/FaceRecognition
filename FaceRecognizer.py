@@ -10,7 +10,10 @@ import dlib
 import pickle
 import cv2
 import uuid
+import keras
 import rotateImage
+
+
 
 def rect_to_bb(rect):
     # we will take the bounding box predicted by dlib library
@@ -61,12 +64,20 @@ args = {
         "encodings": "complete_path/encodings.pickle",
         "detection_method": "cnn"
 
+
 }
 
 # initialize dlib's face detector and facial landmark predictor
 detector = dlib.get_frontal_face_detector()
 predictor = dlib.shape_predictor(args["shape_predictor"])
 face = FaceAligner(predictor, desiredFaceWidth=256)
+
+# load the keras model into the code
+emotions_model = keras.models.load_model('modelForEmotions/model_v6_23.hdf5')
+
+# labels for prediction of classes for emotions 
+class_labels = {'Angry': 0, 'Sad': 5, 'Neutral': 4, 'Disgust': 1, 'Surprise': 6, 'Fear': 2, 'Happy': 3}
+class_labels = {v:k for k,v in class_labels.items()}
 
 # Load input image, resize and convert it to grayscale
 image = cv2.imread(args["image"])
@@ -88,6 +99,7 @@ for (i, rect) in enumerate(rects):
     # [i.e., (x, y, w, h)]
     (x, y, w, h) = face_utils.rect_to_bb(rect)
     faceOrig = imutils.resize(image[y:y + h, x:x + w], width=256)
+    inputFace = imutils.resize(gray[y:y + h, x:x + w], width=256)
     faceAligned = face.align(image, gray, rect)
     cv2.rectangle(image, (x, y), (x + w, y + h), (0, 255, 0), 2)
 
@@ -104,6 +116,19 @@ for (i, rect) in enumerate(rects):
         cv2.circle(image, (x, y), 1, (0, 0, 255), -1)
 
     cv2.imshow("Original", faceOrig)
+    
+    # preprocess the image before running prediction
+    # inputFace = cv2.cvtColor(faceOrig.copy(),cv2.COLOR_RGB2GRAY)
+    inputFace = cv2.resize(inputFace,(48,48))
+    inputFace = inputFace.astype("float")/255.0
+    inputFace = keras.preprocessing.image.img_to_array(inputFace)
+    
+    # use the keras model on zoomed face for emotion detection
+    inputFace = np.expand_dims(inputFace,axis=0)
+    preds = emotions_model.predict(inputFace)[0]
+    print(preds)
+    label = class_labels[preds.argmax()]
+    
     cv2.imshow("Aligned", faceAligned)
     cv2.waitKey(0)
 
@@ -157,7 +182,7 @@ for ((top, right, bottom, left), name) in zip(boxes, names):
     # draw predicted face name on image
     cv2.rectangle(image, (left, top), (right, bottom), (0, 255, 0), 2)
     y = top - 15 if top - 15 > 15 else top + 15
-    cv2.putText(image, name, (left, y), cv2.FONT_HERSHEY_SIMPLEX,
+    cv2.putText(image, name + " " + label, (left, y), cv2.FONT_HERSHEY_SIMPLEX,
                 0.75, (0, 255, 0), 2)
 
 # Output Image
