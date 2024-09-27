@@ -1,4 +1,5 @@
 import cv2
+import os
 
 # read image as grey scale
 
@@ -37,5 +38,5 @@ def rotateFunction(img):
 
 
 if __name__ == '__main__':
-    image = "C:\\Users\\KSHITIJ\\PycharmProjects\\rotateImage\\virat.jpg"
+    image = os.getcwd() + "rotateImage\\virat.jpg"
     rotateFunction(image)
